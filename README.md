@@ -1,2 +1,1 @@
-# Sales Data Analysis
-Analysis of sales data using SQL and Power BI.
+Data migration pipeline from Excel to SQL Server including pre-load transformation and validation
