@@ -1,0 +1,31 @@
+CREATE TABLE Orders (
+    RowID INT PRIMARY KEY,
+    OrderID VARCHAR(20),
+    OrderDate DATE,
+    ShipDate DATE,
+    ShipMode VARCHAR(50),
+    CustomerID VARCHAR(20),
+    CustomerName VARCHAR(100),
+    Segment VARCHAR(50),
+    Country VARCHAR(100),
+    City VARCHAR(100),
+    State VARCHAR(100),
+    PostalCode VARCHAR(20),
+    Region VARCHAR(50),
+    ProductID VARCHAR(30),
+    Category VARCHAR(50),
+    SubCategory VARCHAR(50),
+    ProductName VARCHAR(255),
+    Sales DECIMAL(10,2),
+    Quantity INT,
+    Discount DECIMAL(5,2),
+    Profit DECIMAL(10,2),
+
+    -- Meta columns
+    CreatedBy VARCHAR(50) DEFAULT SYSTEM_USER,
+    CreatedAt DATETIME DEFAULT GETDATE(),
+    UpdatedBy VARCHAR(50) NULL,
+    UpdatedAt DATETIME NULL,
+    DeletedBy VARCHAR(50) NULL,
+    DeletedAt DATETIME NULL
+);
